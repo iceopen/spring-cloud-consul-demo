@@ -9,8 +9,6 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class ComputeController {
 
-
-
     @RequestMapping(value = "/add", method = RequestMethod.GET)
     public String add(@RequestParam Integer a, @RequestParam Integer b) {
 

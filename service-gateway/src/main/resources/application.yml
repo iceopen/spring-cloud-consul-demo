@@ -1,0 +1,29 @@
+spring:
+  application:
+    name: service-gateway
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+      discovery:
+        serviceName: ${spring.application.name}
+        healthCheckPath: /actuator/health
+        healthCheckInterval: 15s
+        tags: gateway-/${spring.application.name}
+        instanceId: ${spring.application.name}:${vcap.application.instance_id:${spring.application.instance_id:${random.value}}}
+    gateway:
+      locator:
+        enabled: true
+      default-filters:
+        - AddResponseHeader=X-Response-Default-Foo, Default-Bar
+      routes:
+        # =====================================
+        - id: service_to_user
+          uri: lb://service-wx
+          order: 8090
+          predicates:
+            - Path=/**
+          filters:
+            - StripPrefix=1
+server:
+  port: 0
