@@ -1,5 +1,8 @@
 Spring Cloud 模块组合案例
 ====================
+
+[![Build Status](https://travis-ci.org/iceopen/spring-cloud-consul-demo.svg?branch=master)](https://travis-ci.org/iceopen/spring-cloud-consul-demo)
+
 ## 依赖：
 - maven 
 - jdk
