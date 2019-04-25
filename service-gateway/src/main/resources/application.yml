@@ -26,4 +26,13 @@ spring:
           filters:
             - StripPrefix=1
 server:
-  port: 0
+  port: 8081
+
+endpoints:
+  prometheus:
+    enabled: true
+management:
+  endpoints:
+    web:
+      exposure:
+        include: metrics,prometheus

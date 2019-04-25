@@ -46,3 +46,13 @@ make clean
 - service-wx
 - service-client
 - service-gateway
+
+## 访问地址
+
+访问消费者端
+
+http://127.0.0.1:8080/?a=1&b=2
+
+访问网关
+
+http://127.0.0.1:8081/service_to_user/add?a=1&b=3
