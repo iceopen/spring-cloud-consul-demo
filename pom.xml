@@ -20,6 +20,7 @@
     <modules>
         <module>service-wx</module>
         <module>service-gateway</module>
+        <module>service-client-sdk</module>
         <module>service-client</module>
     </modules>
 
@@ -52,13 +53,6 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-        </plugins>
-    </build>
+
 
 </project>

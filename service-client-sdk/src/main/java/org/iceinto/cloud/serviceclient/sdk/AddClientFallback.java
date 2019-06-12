@@ -1,4 +1,4 @@
-package org.iceinto.cloud.serviceclient;
+package org.iceinto.cloud.serviceclient.sdk;
 
 
 import org.springframework.stereotype.Component;
