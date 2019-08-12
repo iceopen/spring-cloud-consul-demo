@@ -50,13 +50,6 @@ make clean
 
 推荐 idea/sts4 进行开发测试
 
-测试启动顺序：
-
-- consul
-- service-wx
-- service-client
-- service-gateway
-
 ## 访问地址
 
 访问消费者端
@@ -78,3 +71,24 @@ curl -sSL https://zipkin.io/quickstart.sh | bash -s
 java -jar zipkin.jar
 ```
 
+### [Prometheus](https://prometheus.io/) 监控支持
+
+### [Grafana](https://prometheus.io/) 监控报表展示
+
+报表使用 [JVM (Micrometer)](https://grafana.com/grafana/dashboards/4701)
+
+## 测试启动顺序：
+
+### 必须启动
+   
+- consul
+- service-wx
+- service-client
+- service-gateway
+
+### 按需启动
+
+- Zipkin
+- Prometheus
+- Grafana
+- Alertmanager 告警

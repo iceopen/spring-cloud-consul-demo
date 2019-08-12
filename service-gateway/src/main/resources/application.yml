@@ -25,14 +25,20 @@ spring:
             - Path=/**
           filters:
             - StripPrefix=1
+  sleuth:
+    sampler:
+      probability: 1.0
+  zipkin:
+    base-url: http://127.0.0.1:9411/
+
 server:
   port: 8081
 
-endpoints:
-  prometheus:
-    enabled: true
 management:
   endpoints:
     web:
       exposure:
-        include: metrics,prometheus
+        include:  '*'
+  metrics:
+    tags:
+      application: ${spring.application.name}

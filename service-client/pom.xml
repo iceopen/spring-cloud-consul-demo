@@ -49,6 +49,10 @@
             <artifactId>spring-cloud-starter-zipkin</artifactId>
         </dependency>
         <dependency>
+            <groupId>io.micrometer</groupId>
+            <artifactId>micrometer-registry-prometheus</artifactId>
+        </dependency>
+        <dependency>
             <groupId>org.iceinto.cloud</groupId>
             <artifactId>service-client-sdk</artifactId>
             <version>0.0.1</version>
