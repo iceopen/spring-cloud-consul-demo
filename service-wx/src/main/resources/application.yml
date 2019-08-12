@@ -8,7 +8,7 @@ spring:
       discovery:
         serviceName: ${spring.application.name}
         healthCheckPath: /actuator/health
-        healthCheckInterval: 15s
+        healthCheckInterval: 5s
         tags: wx-/${spring.application.name}
         instanceId: ${spring.application.name}:${vcap.application.instance_id:${spring.application.instance_id:${random.value}}}
 server:
