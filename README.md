@@ -66,3 +66,15 @@ http://127.0.0.1:8080/?a=1&b=2
 访问网关
 
 http://127.0.0.1:8081/service_to_user/add?a=1&b=3
+
+## 附加添加内容
+
+### [Zipkin](https://zipkin.io/pages/quickstart.html) 链路追踪
+
+[Spring Cloud 官方文档地址](https://cloud.spring.io/spring-cloud-static/Greenwich.RELEASE/single/spring-cloud.html#_spring_cloud_sleuth)
+
+```shell
+curl -sSL https://zipkin.io/quickstart.sh | bash -s
+java -jar zipkin.jar
+```
+

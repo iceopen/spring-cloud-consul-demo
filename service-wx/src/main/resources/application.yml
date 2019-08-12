@@ -11,5 +11,10 @@ spring:
         healthCheckInterval: 5s
         tags: wx-/${spring.application.name}
         instanceId: ${spring.application.name}:${vcap.application.instance_id:${spring.application.instance_id:${random.value}}}
+  sleuth:
+    sampler:
+      probability: 1.0
+  zipkin:
+    base-url: http://127.0.0.1:9411/
 server:
   port: 0
