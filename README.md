@@ -3,11 +3,14 @@ Spring Cloud 模块组合案例
 
 [![Build Status](https://travis-ci.org/iceopen/spring-cloud-consul-demo.svg?branch=master)](https://travis-ci.org/iceopen/spring-cloud-consul-demo)
 
-## 依赖：
+## 依赖版本：
 
-- maven 3.5
-- jdk 1.8
+- consul 1.4+
+- maven 3.5+
+- jdk 1.8+
 - make
+- Zipkin 最新版本
+- Prometheus 和 Grafana 都可以使用最新版本
 
 ## 启动顺序：
 ### [Consul](https://www.consul.io/downloads.html)
@@ -16,7 +19,7 @@ Spring Cloud 模块组合案例
 consul agent -dev
 ```
 
-访问地址：http://127.0.0.1:8500/ui/dc1/services 查看服务是否运营正常 
+访问地址：http://127.0.0.1:8500/ui/ 查看服务是否运营正常 
 
 ### 构建应用
 
